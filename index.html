@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blockchain Decision Tool</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="stage">
+    <div class="title">Do you need blockchain ?</div>
+    <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
+      <div class="stackedcards-container">
+        <div class="card card-text-container">
+          <div class="card-content">
+            <div align="center" class="card-image background-1"><img src="images/quiz1.png" width="50%" height="50%"/></div>
+            <div class="card-text-container">
+              <div class="card-titles">
+                  Does your project need a Central Authority or Middleman ?
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-2"><img src="images/quiz2.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Do you want to work with digital assets ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-3"><img src="images/quiz3.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Are you wanting / looking for a permanent solution for the digital assets ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-4"><img src="images/quiz4.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Do you need a common shared database ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-5"><img src="images/quiz5.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Are you working with multiple parties ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-6"><img src="images/quiz6.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Do you want a trustless environment ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-7"><img src="images/quiz7.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Does your network need high efficiency in terms of size and speed due to its complexity ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-8"><img src="images/quiz8.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Does your requirement include large data storage unit ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-9"><img src="images/quiz9.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Are you looking for a contractual solution ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-10"><img src="images/quiz10.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Do you require no change or little change in the system ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-11"><img src="images/quiz11.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Do you need shared write access ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-12"><img src="images/quiz12.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Do you need control over the network functionalities ?
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image background-13"><img src="images/quiz13.png" width="100%" height="100%"/></div>
+            <div class="card-titles">
+              Do you want transactions to be public ?
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="stackedcards--animatable stackedcards-overlay top"><img src="https://image.flaticon.com/icons/png/512/889/889590.png"  width="50%" height="50%"/></div>
+      <div class="stackedcards--animatable stackedcards-overlay right"><img src="images/thumbs_up.png" width="50%" height="50%"/></div>
+      <div class="stackedcards--animatable stackedcards-overlay left"><img src="images/thumbs_down.png" width="50%" height="50%"/></div>
+    </div>
+    <div class="global-actions">
+      <div class="left-action">
+        <div align="center" class="column">
+          <img src="images/thumbs_down.png" width="30" height="30"/>
+          No
+        </div>
+      </div>
+      <div class="top-action"><img src="https://image.flaticon.com/icons/png/512/889/889590.png" width="30" height="30"/></div>
+      <div class="right-action">
+        <div align="center" class="column">
+          <img src="images/thumbs_up.png" width="30" height="30"/>
+
+          Yes
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <div class="column">
+      <div class="title-modal" id="title_detail">Got it! We received your preferences!  To submit again, press F5.</div>
+      <div ><img src="images/bc_dont_need.png" id="image_detail" class="filter-image" width="50%" height="50%"/> </div><br/>
+      <div class="desc-modal" id="desc_detail">Got it! We received your preferences!  To submit again, press F5.</div></br>
+    </div>
+  </div>
+
+</div>
+
+<div >
+
+  <div class="wrong-state hidden">
+    <div class="column">
+      <div ><img src="images/bc_dont_need.png" id="image_state" class="filter-image"/> </div><br/>
+      <h1 id="wrong_title">Got it! We received your preferences!  To submit again, press F5.</h1></br>
+      <h2 id="wrong_subtitle">Got it! We received your preferences!  To submit again, press F5.</h2></br>
+      <h1 id="ans_yes">Answer Yes.</h1></br>
+      <h2 id="text_yes">Got it! We received your preferences!  To submit again, press F5.</h2></br>
+      <h1 id="ans_no">Answer No.</h1></br>
+      <h2 id="text_no">Got it! We received your preferences!  To submit again, press F5.</h2></br>
+      <button id="button-reload" class="button button1">Reload</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,556 @@
+/*------ CSS Use Case Example START ------*/
+
+/* import font ROBOTO */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin:  0px;
+}
+
+.background-0 { background: #839FC5; }
+.background-1 { background: #569D99; }
+.background-2 { background: #740039; }
+.background-3 { background: #839FC5; }
+.background-4 { background: #6A4F76; }
+.background-5 { background: #57636D; }
+.background-6 { background: #6D5242; }
+.background-7 { background: #4F5051; }
+.background-8 { background: #C87D26; }
+.background-9 { background: #569D99; }
+.background-10 { background: #740039; }
+.background-11 { background: #839FC5; }
+.background-12 { background: #6A4F76; }
+.background-13 { background: #57636D; }
+
+.background-0,
+.background-1,
+.background-2,
+.background-3,
+.background-4,
+.background-5,
+.background-6,
+.background-7 {
+  transition: all 400ms ease;
+}
+/* class created only for a better preview*/
+.stage {
+    position: absolute;
+    opacity: 1;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.stage.hidden {
+  opacity: 0;
+  transition: all 400ms ease;
+}
+
+@media screen and (max-width: 600px) {
+    .stage {
+        max-width: 100%;
+      }
+  }
+ 
+ h1, h2, h3 {
+   margin: 0;
+ }
+ 
+ h1 {
+    color: #FFF;
+   font-size: 25px;
+   font-weight: 450;
+   text-align: center;
+ }
+ 
+ h2 {
+   font-size: 17px;
+   font-weight: 400;
+   color: #FFF;
+   text-align: center;
+ }
+ 
+ h3 {
+   font-size: 11px;
+   font-weight: 300;
+   color: #BFBFBE;
+   margin-top: 10px;
+ }
+ 
+ .title {
+     width: 100%;
+     padding-bottom: 30px;
+     text-align: center;
+     font-weight: 500;
+     font-size: 30px;
+     color: #fff;
+ }
+
+.title-modal {
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000;
+}
+
+.desc-modal {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+}
+
+ .card-content {
+   position: relative;
+   color: #fff;
+   padding: 5px;
+ }
+ 
+ .card-image {
+   width: 100%;
+   height: 100%;
+ }
+ .card-image img {
+   align-content: center;
+  padding: 50px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   -o-object-fit: cover;
+      object-fit: cover;
+   width: 60%;
+   height: 60%;
+   /* min-height: 330px; */
+ }
+ 
+ .card-titles {
+   background-color: rgba(0, 0, 0, 0.4);
+   position: absolute;
+   font-size: 28px;
+   bottom: 0;
+   text-align: center;
+   padding: 20px 20px;
+ }
+
+ .card-text-container{
+     height: 100%;
+     width: 100%;
+    background: rgba(255,255,255,0.5);
+ }
+ 
+ .card-footer {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   padding: 25px 35px;
+ }
+ 
+ .popular-destinations-text {
+   font-size: 16px;
+   font-weight: 400;
+   color: #8E9AA4;
+   width: 100%;
+   min-width: 110px;
+ }
+ 
+ .popular-destinations-images {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: end;
+         -ms-flex-pack: end;
+             justify-content: flex-end;
+     width: 100%;
+ }
+ 
+ .circle {
+     width: 40px;
+     height: 40px;
+     border-radius:  50%;
+     background: #fff;
+     margin-left: 8px;
+ }
+ 
+ .circle img {
+     border-radius: 50%
+ }
+ 
+ /* global actions buttons*/
+.global-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+    min-width: 200px;
+}
+ 
+ .top-action,
+ .right-action,
+ .left-action {
+    margin: auto;
+     border-radius: 50%;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     background: #fff;
+   -webkit-box-shadow: 0 3px 4px 0px rgba(0,0,0,0.5);
+           box-shadow: 0 3px 4px 0px rgba(0,0,0,0.5);
+ }
+
+ .right-action,
+ .top-action,
+ .left-action {
+    align-items: center;
+    justify-content: center;
+     width: 60px;
+     height: 60px;
+     margin: 0 20px;
+ }
+ 
+
+
+.final-state.active {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease;
+}
+
+.final-state.hidden {
+  opacity: 0;
+}
+
+.wrong-state.active {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease;
+}
+  
+.wrong-state.hidden {
+    opacity: 0;
+}
+
+.public-state.active {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease;
+}
+  
+.public-state.hidden {
+    opacity: 0;
+}
+
+.private-state.active {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease;
+}
+  
+.private-state.hidden {
+    opacity: 0;
+}
+
+
+/*----- Stacked Cards component css START -----*/
+body {
+    overflow-x: hidden;
+}
+
+.no-transition {
+  -webkit-transition: none ! important;
+  transition: none ! important;
+}
+
+ .stackedcards-overflow {
+     overflow-y: hidden !important;
+ }
+ 
+ .stackedcards.init {
+     opacity: 0;/* set the opacity to 0 if you want a fade-in effect to stacked cards on page load */
+ }
+ 
+ .stackedcards {
+     position: relative;
+ }
+ 
+ .stackedcards * {
+     -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+          user-select: none;
+ }
+ 
+ .stackedcards--animatable {
+     -webkit-transition: all 400ms ease;
+             -o-transition: all 400ms ease;
+             transition: all 400ms ease;
+ }
+ 
+ .stackedcards .stackedcards-container > *,
+ .stackedcards-overlay {
+     position: absolute;
+     width: 100%; /* set 100% */
+     height: 100%; /* set 100% */
+     will-change: transform, opacity;
+     top: 0;
+     border-radius: 10px;
+     /* min-width: 265px; */
+ }
+ 
+ .stackedcards-overlay.left > div,
+ .stackedcards-overlay.right > div,
+ .stackedcards-overlay.top > div {
+     width: 100%;
+     height: 100%;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+ }
+ 
+ .stackedcards-overlay.left,
+ .stackedcards-overlay.right,
+ .stackedcards-overlay.top {
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     left: 0;
+     opacity: 0;
+     top: 0;
+     height: 100%;
+ }
+ 
+ .stackedcards-overlay.top,
+ .stackedcards-overlay.right,
+ .stackedcards-overlay.left {
+     background: #fff;
+ }
+ 
+ .stackedcards-overlay.left:empty,
+ .stackedcards-overlay.right:empty,
+ .stackedcards-overlay.top:empty {
+   display: none !important;
+ }
+ 
+ .stackedcards-overlay-hidden {
+     display: none;
+ }
+ 
+ .stackedcards-origin-bottom {
+     -webkit-transform-origin: bottom;
+             -ms-transform-origin: bottom;
+         transform-origin: bottom;
+ }
+ 
+ .stackedcards-origin-top {
+     -webkit-transform-origin: top;
+             -ms-transform-origin: top;
+         transform-origin: top;
+ }
+ 
+ .stackedcards-bottom,
+ .stackedcards-top,
+ .stackedcards-none {
+     background: #fff; /* set card background background */
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.30);  
+    height: 100%;
+ }
+ 
+ .stackedcards .stackedcards-container > :nth-child(1) {
+     position: relative;
+     display: block;
+ }
+
+ .column {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    /* float: inherit; */
+    width: 75%;
+  }
+
+img.filter-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*modal boxes*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button {
+    
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: #008CBA;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #008CBA;
+    color: white;; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button1:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+  /* Style the navigation bar */
+  .navbar {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+  }
+
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar img{
+    padding: 0.1% 1%;
+    width: 5%;
+  }
+
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: white;
+  }
+
+  /* Current/active navbar link */
+  .active {
+    background-color: #4CAF50;
+  }
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+ 
+
+/*----- Stacked Cards component css END -----*/
